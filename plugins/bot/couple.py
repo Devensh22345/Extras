@@ -98,8 +98,8 @@ async def ctest(_, message):
             )
             img = Image.open(background_image_path)
 
-            img1 = img1.resize((437, 437))
-            img2 = img2.resize((437, 437))
+            img1 = img1.resize((1, 1))
+            img2 = img2.resize((1, 1))
 
             mask = Image.new("L", img1.size, 0)
             draw = ImageDraw.Draw(mask)
