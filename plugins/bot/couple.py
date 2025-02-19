@@ -81,20 +81,20 @@ async def ctest(_, message):
                 p1 = await app.download_media(photo1.big_file_id, file_name=p1_path)
             except Exception:
                 p1 = download_image(
-                    "https://telegra.ph/file/05aa686cf52fc666184bf.jpg", p1_path
+                    "https://envs.sh/d2b.jpg", p1_path
                 )
             try:
                 p2 = await app.download_media(photo2.big_file_id, file_name=p2_path)
             except Exception:
                 p2 = download_image(
-                    "https://telegra.ph/file/05aa686cf52fc666184bf.jpg", p2_path
+                    "https://envs.sh/d2b.jpg", p2_path
                 )
 
             img1 = Image.open(p1)
             img2 = Image.open(p2)
 
             background_image_path = download_image(
-                "https://telegra.ph/file/96f36504f149e5680741a.jpg", cppic_path
+                "https://envs.sh/d2b.jpg", cppic_path
             )
             img = Image.open(background_image_path)
 
